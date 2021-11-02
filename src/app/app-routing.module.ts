@@ -3,7 +3,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 import { LayoutComponent } from './layout/layout.component';
 
-import { AdminGuard } from './admin.guard';
+// import { AdminGuard } from './admin.guard';
 
 const routes: Routes = [
   {
@@ -20,24 +20,24 @@ const routes: Routes = [
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
       },
       {
-        path: 'servicios',
-        loadChildren: () => import('./servicios/servicios.component').then(m => m.ServiciosComponent)
+        path: 'servicios-juridicos',
+        loadChildren: () => import('./modules/servicios/servicios.module').then(m => m.ServiciosModule)
       },
       {
         path: 'asesorias-juridicas',
-        loadChildren: () => import('./asesorias-juridicas/asesorias-juridicas.component').then(m => m.AsesoriasJuridicasComponent)
+        loadChildren: () => import('./modules/asesorias/asesorias.module').then(m => m.AsesoriasModule)
       },
       {
-        path: 'cobranzas',
-        loadChildren: () => import('./cobranza/cobranza.component').then(m => m.CobranzaComponent)
+         path: 'cobranzas',
+        loadChildren: () => import('./modules/cobranzas/cobranzas.module').then(m => m.CobranzasModule)
       },
       {
         path: 'seguros',
-        loadChildren: () => import('./seguros/seguros.component').then(m => m.SegurosComponent)
+        loadChildren: () => import('./modules/seguros/seguros.module').then(m => m.SegurosModule)
       },
       {
-        path: 'contactanos',
-        loadChildren: () => import('./contactanos/contactanos.component').then(m => m.ContactanosComponent)
+      path: 'contactanos',
+      loadChildren: () => import('./modules/contactanos/contactanos.module').then(m => m.ContactanosModule)
       },
     ]
   },

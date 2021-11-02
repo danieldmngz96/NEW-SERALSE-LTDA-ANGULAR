@@ -10,17 +10,14 @@ import { LayoutComponent } from './layout/layout.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SegurosComponent } from './seguros/seguros.component';
-import { ServiciosComponent } from './servicios/servicios.component';
+
 
 
 
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
     LayoutComponent,
-      SegurosComponent,
-      ServiciosComponent
    ],
   imports: [
     BrowserModule,

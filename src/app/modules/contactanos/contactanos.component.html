@@ -1,3 +1,60 @@
-<p>
-  contactanos works!
-</p>
+<mat-list>
+  <h1 style="text-align: center !important;">SEGUROS</h1>
+<mat-divider style="background-color: #000 !important;"></mat-divider>
+</mat-list>
+<a href="https://wa.me/+573013078816?text=Me%20gustaría%20Ponerme%20en%20contacto" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+  <mat-card style="top:39px;
+  background: #D1E8FF;
+  width: 70%;
+  margin: 0 auto;"> 
+    <p style="font-size: 22px; 
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 14px;"><span style="font-weight: bolder;"></span> <br> Gracias por contar con <b>SERALSE LTDA</b>  escríbenos tus comentarios, dudas o sugerencias y con gusto las resolveremos a la  mayor  brevedad posible.</p>
+  </mat-card>
+<mat-divider style="margin-top: 9%;"></mat-divider>
+
+<div class="container-fluid" style="padding-left: 28%; padding-right: 28%;">
+  <p>Escribe un mensaje y en breve te responderemos:</p>
+  <form class="form" action="https://wa.me/+573013078816"  method="get"> 
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Enviar mensaje:</mat-label>
+      <textarea matInput name="text" id="text" class="form-control" required placeholder="Hola quisiera saber.."></textarea>
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary">Enviar !</button>
+    </form>
+</div>
+<mat-divider style="margin-top: 8%; margin-bottom: 5%;"></mat-divider>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+            Nuestra ubicacion
+            </mat-panel-title>
+            <mat-panel-description>
+              haz clic para ver nuestra ubicacion
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-description>
+              Nuestra ubicacion en Google Maps {{panelOpenState ? 'open' : 'closed'}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15907.210179787082!2d-74.0836806!3d4.6292883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd93d04b54ca7d5a1!2sSERALSE%20LTDA!5e0!3m2!1ses!2sco!4v1624521002214!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+   
+    <div class="col-sm">
+      <p>Llamar ahora haciendo click aqui <span> <a href="tel:+573013078816"><img src="../../../assets/icon/llamada.png" alt="llamar ahora" width="30"></a></span></p>
+      <br>
+      <p>Enviar email ahora haciendo click aqui <span>   <a href="mailto:info@seralse.com.co?subject=Contacto pagina web" target="_self" data-content="seguros@seralse.com.co" data-type="mail"><img src="../../../assets/icon/nuevo-email.png" alt="email" width="30"></a></span></p>
+    </div>
+  </div>
+</div>

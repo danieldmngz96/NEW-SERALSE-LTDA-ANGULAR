@@ -29,21 +29,12 @@
   <div class="row">
     <div class="col-sm">
       <mat-accordion>
-        <mat-expansion-panel hideToggle>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-            Nuestra ubicacion
-            </mat-panel-title>
-            <mat-panel-description>
-              haz clic para ver nuestra ubicacion
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-        </mat-expansion-panel>
+        
         <mat-expansion-panel (opened)="panelOpenState = true"
                              (closed)="panelOpenState = false">
           <mat-expansion-panel-header>
             <mat-panel-description>
-              Nuestra ubicacion en Google Maps {{panelOpenState ? 'open' : 'closed'}}
+              Nuestra ubicacion en Google Maps 
             </mat-panel-description>
           </mat-expansion-panel-header>
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15907.210179787082!2d-74.0836806!3d4.6292883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd93d04b54ca7d5a1!2sSERALSE%20LTDA!5e0!3m2!1ses!2sco!4v1624521002214!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

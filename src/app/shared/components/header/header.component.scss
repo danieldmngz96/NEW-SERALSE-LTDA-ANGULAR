@@ -3,14 +3,17 @@ nav > a {
   text-decoration: none;
 }
  a.active:hover {
-  background-color: blue;
+  background-color: #002496;
 }
 .header-row{
   width: 100%;
 }
 .header-toolbar {
   margin-bottom: 20px;
+  height: 130px;
+  background-color: #002496;
 }
 a {
   margin-right: 25px;
+  color: white;
 }

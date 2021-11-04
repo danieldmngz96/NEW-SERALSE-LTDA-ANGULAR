@@ -9,14 +9,9 @@ export class BannerComponent implements OnInit {
   //Aca tenemos el arreglo de strings para las diferentes imagenes 
   images: string[] = [
     'assets/images/paronamica.jpg',
-    'assets/images/banner-2.jpg',
-    'assets/images/banner-3.jpg'
+    'assets/images/img-servicio.PNG',
+    'assets/images/coliseo.jpg'
   ];
-
-  images2: string[] = [
-    'assets/images/logo-seralse-white.png',
-  ];
-
   constructor() { }
 
   ngOnInit() {

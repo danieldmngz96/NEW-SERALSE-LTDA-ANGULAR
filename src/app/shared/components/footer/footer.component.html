@@ -1,37 +1,48 @@
 <footer>
-  <div class="container" style="height: 350px;">
+  <div class="container" style="height: 231px;">
     <div class="row">
       <div class="col-xs-12 col-md-4">
         <div class="box">
           <h3>SERVICIOS</h3>
           <ul>
             <li>
-              <a routerLink="/products" 
+              <a routerLink="/servicios-juridicos" 
                 >Nuestros Servicios</a
               >
             </li>
             <li>
-              <a routerLink="/products" [queryParams]="{ type: 'offer' }"
-                >En oferta</a
+              <a routerLink="/home" [queryParams]="{ type: 'offer' }"
+                >Seralse</a
               >
             </li>
             <li>
-              <a routerLink="/products" [queryParams]="{ type: 'latest' }"
-                >Últimos productos</a
+              <a routerLink="/asesorias-juridicas" [queryParams]="{ type: 'latest' }"
+                >Asesoria Juridica</a
+              >
+            </li>
+            <li>
+              <a routerLink="/cobranzas" [queryParams]="{ type: 'latest' }"
+                >Cobranzas</a
+              >
+            </li>
+            <li>
+              <a routerLink="/seguros" [queryParams]="{ type: 'latest' }"
+                >Seguros</a
               >
             </li>
           </ul>
         </div>
       </div>
+
       <div class="col-xs-12 col-md-4">
         <div class="box">
           <h3>Acerca de SERALSE</h3>
           <ul>
-            <li><a routerLink="/about-us">Sobre nosotros</a></li>
-            <li><a routerLink="/stores">Nuestras tiendas</a></li>
+            <li><a routerLink="/home">Sobre nosotros</a></li>
           </ul>
         </div>
       </div>
+      
       <div class="col-xs-12 col-md-4">
         <div class="box">
           <h3>Contacto</h3>
@@ -39,6 +50,10 @@
                 <input [formControl]="emailInput" matInput placeholder="Su correo" type="email">
               </mat-form-field>
               <button (click)="registerMail()" [disabled]="emailInput.invalid" mat-raised-button color="accent">Suscribirse</button> -->
+              <li><a routerLink="/contactanos">Enviar mensaje ahora!</a></li>
+              <li><a routerLink="/contactanos">Nuestra ubicacion</a></li>
+              <li><a routerLink="/contactanos">Llamar ahora</a></li>
+              <li><a routerLink="/contactanos">Enviar Correo Ahora</a></li>
         </div>
       </div>
     </div>

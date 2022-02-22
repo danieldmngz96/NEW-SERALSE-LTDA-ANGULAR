@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contactanos.component.scss']
 })
 export class ContactanosComponent implements OnInit {
-  panelOpenState = false;
+
   constructor() { }
 
   ngOnInit() {

@@ -1,25 +1,41 @@
-<mat-toolbar class="header-toolbar" >
+<mat-toolbar class="header-toolbar">
   <mat-toolbar-row>
     <div class="container" style="display: flex;">
       <div class="">
         <div class="col">
-        <a href="index.html"> <img class="position_content" id="u4647_img" src="../../../../assets/images/logo-seralse-white.png" alt="logo seralse blanco" style="height: 93px;
+          <a href="index.html"> <img class="position_content" id="u4647_img"
+              src="../../../../assets/images/logo-seralse-white.png" alt="logo seralse blanco" style="height: 93px;
               padding-top: 51px;" width="100%" height="auto"></a>
+        </div>
       </div>
-     </div>
       <div class=" between-xs middle-xs header-row">
         <div class="col" style="float: right; padding-top: 86px;">
-        <nav>
-          <a mat-button routerLink="/home" >Seralse</a>
-          <a mat-button routerLink="/servicios-juridicos" >Servicios</a>
-          <a mat-button routerLink="/asesorias-juridicas" >Asesoria Juridica</a>
-          <a mat-button routerLink="/cobranzas" >Cobranzas</a>
-          <a mat-button routerLink="/seguros" >Seguros</a>
-          <a mat-button routerLink="/contactanos" >Contactanos</a>
-          <a mat-button routerLink="/login" >Login</a>
-        </nav>
-      </div>
-       <!-- <a mat-raised-button matBadge="4" matBadgeColor="warn">
+          <!-- <nav>
+            <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item><a mat-button routerLink="/home">Seralse</a></button>
+              <button mat-menu-item><a mat-button routerLink="/servicios-juridicos">Servicios</a></button>
+              <button mat-menu-item><a mat-button routerLink="/asesorias-juridicas">Asesoria Juridica</a></button>
+              <button mat-menu-item><a mat-button routerLink="/cobranzas">Cobranzas</a></button>
+              <button mat-menu-item><a mat-button routerLink="/seguros">Seguros</a></button>
+              <button mat-menu-item><a mat-button routerLink="/contactanos">Contactanos</a></button>
+              <button mat-menu-item><a mat-button routerLink="/login">Login</a></button>
+            </mat-menu>
+          </nav> -->
+
+          <button mat-button [matMenuTriggerFor]="menu" style="color: #fff;"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item  routerLink="/home">Seralse</button>
+            <button mat-menu-item  routerLink="/servicios-juridicos">Servicios</button>
+            <button mat-menu-item  routerLink="/asesorias-juridicas">Asesoria Juridica</button>
+            <button mat-menu-item  routerLink="/cobranzas">Cobranzas</button>
+            <button mat-menu-item  routerLink="/seguros">Seguros</button>
+            <button mat-menu-item  routerLink="/login">Login</button>
+          </mat-menu>
+
+        </div>
+        <!-- <a mat-raised-button matBadge="4" matBadgeColor="warn">
           <mat-icon>shopping_cart</mat-icon>
           Carrito
         </a>-->

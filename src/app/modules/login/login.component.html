@@ -1,3 +1,39 @@
-<p>
-  Bienvendio al login
-</p>
+<div style="text-align: center;">
+  <h3>Bienvendio al login</h3> <br>
+  <i>Ingresa Usuario y Contraseña <br>
+    y en breve podras continuar</i>
+</div>
+
+<div style="display: flex;
+justify-content: center; 
+padding-top: 25px; " 
+class="col-12 row">
+
+  <form>
+    <div class="col-6 row">
+    <mat-form-field appearance="fill" >
+      <mat-label>E-mail</mat-label>
+      <input type="email" matInput placeholder="Ej. user@seralse.com"  >
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Porfavor ingresar un correo valido!
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email es <strong>requerido</strong>
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+
+  <div class="col-6 row">    <mat-form-field appearance="fill" class="col-6">
+      <mat-label>Contraseña</mat-label>
+      <input type="password" matInput    placeholder="Ej.***************">
+      <mat-error *ngIf="passwordFormControl.hasError('email') && !emaipasswordFormControllFormControl.hasError('required')">
+        Porfavor ingresar un correo valido!
+      </mat-error>
+      <mat-error *ngIf="passwordFormControl.hasError('required')">
+        Email es <strong>requerido</strong>
+      </mat-error>
+    </mat-form-field>
+  </div>
+  </form>
+</div>

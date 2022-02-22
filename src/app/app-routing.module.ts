@@ -39,6 +39,10 @@ const routes: Routes = [
       path: 'contactanos',
       loadChildren: () => import('./modules/contactanos/contactanos.module').then(m => m.ContactanosModule)
       },
+      {
+        path: 'login',
+        loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
+      },
     ]
   },
   {
@@ -49,6 +53,7 @@ const routes: Routes = [
     path: '**',
     loadChildren: () => import('./page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)
   },
+  
 ];
 
 @NgModule({

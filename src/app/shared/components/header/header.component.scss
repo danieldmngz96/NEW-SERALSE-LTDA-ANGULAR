@@ -17,3 +17,36 @@ a {
   margin-right: 25px;
   color: white;
 }
+.burger-menu{
+  color: rgb(0, 0, 0);
+  float: right;
+}
+
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .header-row{
+    width: 50%;
+  }
+  .burger-menu{
+    color: rgb(255, 255, 255);
+  }
+  .desktop-menu{
+    color: #fff;
+    display: none;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1400px) {
+  .desktop-menu{
+    color: #fff;
+  }
+  .burger-menu{
+    color: rgba(0,0, 0, 0.0);
+    display: none;
+    float: right;
+  }
+}
+
+
+
+ 

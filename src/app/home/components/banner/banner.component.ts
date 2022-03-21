@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit {
-  //Aca tenemos el arreglo de strings para las diferentes imagenes 
+  // Aca tenemos el arreglo de strings para las diferentes imagenes 
   images: string[] = [
     'assets/images/paronamica.jpg',
-    'assets/images/banner-2.jpg',
-    'assets/images/banner-3.jpg'
+    'assets/images/future.jpg',
+    'assets/images/ley.jpg'
   ];
 
   images2: string[] = [

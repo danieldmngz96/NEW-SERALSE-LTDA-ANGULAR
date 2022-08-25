@@ -5,8 +5,8 @@
 </div>
 
 <div style="display: flex;
-justify-content: center; 
-padding-top: 25px; " 
+justify-content: center;
+padding-top: 25px; "
 class="col-12 row">
 
   <form>
@@ -27,7 +27,7 @@ class="col-12 row">
   <div class="col-6 row">    <mat-form-field appearance="fill" class="col-6">
       <mat-label>Contraseña</mat-label>
       <input type="password" matInput    placeholder="Ej.***************">
-      <mat-error *ngIf="passwordFormControl.hasError('email') && !emaipasswordFormControllFormControl.hasError('required')">
+      <mat-error *ngIf="passwordFormControl.hasError('email') ">
         Porfavor ingresar un correo valido!
       </mat-error>
       <mat-error *ngIf="passwordFormControl.hasError('required')">
@@ -35,5 +35,6 @@ class="col-12 row">
       </mat-error>
     </mat-form-field>
   </div>
+  <button mat-raised-button color="primary" style="margin-left: 53px;" click="Submit()">Ingresar</button>
   </form>
 </div>

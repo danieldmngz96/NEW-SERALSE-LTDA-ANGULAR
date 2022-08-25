@@ -19,5 +19,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  Submit(){
+    this.router.navigate(['/admin']);
+  }
 }

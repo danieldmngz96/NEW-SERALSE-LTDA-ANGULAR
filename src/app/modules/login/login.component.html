@@ -14,12 +14,12 @@ class="col-12 row">
     <mat-form-field appearance="fill" >
       <mat-label>E-mail</mat-label>
       <input type="email" matInput placeholder="Ej. user@seralse.com"  >
-      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+      <!-- <mat-error *ngIf="loginFormsGroup.hasError('email') && !loginFormsGroup.hasError('required')">
         Porfavor ingresar un correo valido!
       </mat-error>
-      <mat-error *ngIf="emailFormControl.hasError('required')">
+      <mat-error *ngIf="loginFormsGroup.hasError('required')">
         Email es <strong>requerido</strong>
-      </mat-error>
+      </mat-error> -->
     </mat-form-field>
   </div>
 
@@ -27,12 +27,12 @@ class="col-12 row">
   <div class="col-6 row">    <mat-form-field appearance="fill" class="col-6">
       <mat-label>Contraseña</mat-label>
       <input type="password" matInput    placeholder="Ej.***************">
-      <mat-error *ngIf="passwordFormControl.hasError('email') ">
+     <!--  <mat-error *ngIf="loginFormsGroup.hasError('email') ">
         Porfavor ingresar un correo valido!
       </mat-error>
-      <mat-error *ngIf="passwordFormControl.hasError('required')">
+      <mat-error *ngIf="loginFormsGroup.hasError('required')">
         Email es <strong>requerido</strong>
-      </mat-error>
+      </mat-error> -->
     </mat-form-field>
   </div>
   <button mat-raised-button color="primary" style="margin-left: 53px;" click="Submit()">Ingresar</button>

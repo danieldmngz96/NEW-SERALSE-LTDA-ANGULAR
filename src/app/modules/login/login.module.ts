@@ -4,6 +4,7 @@ import { LoginComponent } from '../login/login.component';
 import { MaterialModule } from 'src/app/material/material.module';
 import { LoginRoutingModule } from './login-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -11,7 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     LoginRoutingModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   declarations: [LoginComponent]
 })

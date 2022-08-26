@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import SwiperCore, { Pagination, Navigation } from "swiper";
+
 
 
 
@@ -10,8 +10,8 @@ import SwiperCore, { Pagination, Navigation } from "swiper";
 })
 
 export class BannerComponent implements OnInit {
-  // Aca tenemos el arreglo de strings para las diferentes imagenes 
-  
+  // Aca tenemos el arreglo de strings para las diferentes imagenes
+
   images: string[] = [
     'assets/images/paronamica.jpg',
     'assets/images/future.jpg',

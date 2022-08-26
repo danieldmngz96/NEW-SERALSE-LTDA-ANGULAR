@@ -3,19 +3,19 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar style="background-color: #002496; color: white;" >Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/admin/create">Crear Cliente</a>
-      <a mat-list-item routerLink="/admin">Dashboard</a>
-      <a mat-list-item routerLink="/admin/table">Clientes registrados</a>
+      <a mat-list-item routerLink="/admin"> <mat-icon>dashboard</mat-icon> Dashboard</a>
+      <a mat-list-item routerLink="/admin/create"> <mat-icon>perm_identity</mat-icon>Crear Cliente</a>
+      <a mat-list-item routerLink="/admin/table">	<mat-icon> contacts</mat-icon> Clientes registrados</a>
       <a mat-list-item routerLink="/admin/products"><mat-icon>store</mat-icon> Productos</a>
-      <a mat-list-item routerLink="/admin/categories">
-        <mat-icon>category</mat-icon> Categoría</a>
-      <button mat-list-item > <mat-icon>login</mat-icon> Cerrar</button>
+      <a mat-list-item routerLink="/admin/categories"><mat-icon>category</mat-icon> Categoría</a>
+      <a mat-list-item routerLink="/perfil"><mat-icon>folder_shared</mat-icon> Perfil</a>
+      <a mat-list-item routerLink="" > <mat-icon>login</mat-icon> Cerrar</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar>
+    <mat-toolbar style="background-color: #002496;">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -24,7 +24,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>seralse-store</span>
+      <span style="color: white;">System Seralse</span>
     </mat-toolbar>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>

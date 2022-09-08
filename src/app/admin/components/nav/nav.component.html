@@ -1,30 +1,12 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
-
-
-      <div >
-        <button mat-button [matMenuTriggerFor]="menu"><mat-icon aria-hidden="false">menu</mat-icon>
-        </button>
-        <mat-menu #menu="matMenu">
-          <mat-toolbar style="background-color: #002496; color: white;" >Menu</mat-toolbar>
-          <mat-nav-list>
-            <a mat-list-item routerLink="/admin"> <mat-icon>dashboard</mat-icon> Dashboard</a>
-            <a mat-list-item routerLink="/admin/create"> <mat-icon>perm_identity</mat-icon>Crear Cliente</a>
-            <a mat-list-item routerLink="/admin/table">	<mat-icon> contacts</mat-icon> Clientes registrados</a>
-            <a mat-list-item routerLink="/admin/products"><mat-icon>store</mat-icon> Productos</a>
-            <a mat-list-item routerLink="/admin/categories"><mat-icon>category</mat-icon> Categoría</a>
-            <a mat-list-item routerLink="/perfil"><mat-icon>folder_shared</mat-icon> Perfil</a>
-            <a mat-list-item routerLink="" > <mat-icon>login</mat-icon> Cerrar</a>
-          </mat-nav-list>
-        </mat-menu>
-
-       </div>
-
-       <!--DESKTOP -->
-       <mat-toolbar style="background-color: #002496; color: white;" >Menu</mat-toolbar>
+<mat-sidenav-container class="sidenav-container"  *ngIf="(isHandset$ | async) as result">
+  <mat-sidenav #drawer
+  class="sidenav"
+  fixedInViewport
+  [attr.role]="(result) ? 'dialog' : 'navigation'"
+  [mode]="(result) ? 'over' : 'side'"
+  [opened]="!result">
+<!--DESKTOP -->
+     <mat-toolbar style="background-color: #002496; color: white;" >Menu</mat-toolbar>
        <mat-nav-list>
         <a mat-list-item routerLink="/admin"> <mat-icon>dashboard</mat-icon> Dashboard</a>
         <a mat-list-item routerLink="/admin/create"> <mat-icon>perm_identity</mat-icon>Crear Cliente</a>
@@ -34,6 +16,7 @@
         <a mat-list-item routerLink="/perfil"><mat-icon>folder_shared</mat-icon> Perfil</a>
         <a mat-list-item routerLink="" > <mat-icon>login</mat-icon> Cerrar</a>
       </mat-nav-list>
+
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar style="background-color: #002496;">
